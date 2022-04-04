@@ -52,7 +52,7 @@ public class Prac {
 
 
     /*[1]주차 기본 문법 4*/
-    /*"감" 개수 세는 반복문*/
+    /*"감" 개수 세는 반복문*//*
     public static int countFruit(String fruit) {
         List<String> fruits = new ArrayList<>();
         fruits.add("감");
@@ -77,7 +77,7 @@ public class Prac {
             }
         }
         return cnt;
-    }
+    }*/
 
 
     public static void main(String[] args) {
@@ -300,12 +300,38 @@ public class Prac {
             명령문2    //  조건 1이 참이 아닐 경우 실행할 명령문2
         }*/
         /*=======================*/
-        /*"감" 개수 세는 반복문*/
+        /*"감" 개수 세는 반복문*//*
         int gam = countFruit("감");
         int subak = countFruit("수박");
         int straw = countFruit("딸기");
         System.out.println(gam);
         System.out.println(subak);
-        System.out.println(straw);
+        System.out.println(straw);*/
+
+
+        /*[1주차] 자바 클래스*/
+        /*Ex1*//*
+        Course course = new Course();
+        course.title = "웹개발의 봄, Spring";
+        course.tutor = "남병관";
+        System.out.println(course.title);
+        System.out.println(course.tutor);*/
+
+        /*Ex2*//*
+        Course course2 = new Course();
+        course2.title = "프론트엔드의 꽃, React";
+        course2.tutor = "임민영";
+        System.out.println(course2.title);
+        System.out.println(course2.tutor);*/
+
+        /*Ex3*/
+        String title = "웹개발의 봄, Spring";
+        String tutor = "남병관";
+        int days = 35;
+        Course course = new Course(title, tutor, days);
+        System.out.println(course.title);
+        System.out.println(course.tutor);
+        System.out.println(course.days);
+
     }
 }
