@@ -5,6 +5,51 @@ import java.util.List;
 
 public class Prac {
 
+    /*메소드의 구조*//*
+    public 반환타입 메소드명(재료){
+        명령 모음
+        return 결과값; //  필요할 경우 return
+   }*/
+    /*메소드가 있을때*//*
+    // public, static void 에 대해서는 곧 배웁니다! 우선은 넘어갈게요.
+    public static void printInfo() {
+        String title = "웹개발의 봄 Spring";
+        String tutor = "남병관";
+        int weeks = 5;
+        float ratings = 5.0f;
+
+        System.out.println("제목: " + title);
+        System.out.println("튜터: " + tutor);
+        System.out.println("주차: " + weeks);
+        System.out.println("별점: " + ratings);
+    }*/
+    /*메소드의 파라미터, 반환값 다양한 경우*//*
+    // 파라미터 X, 반환값 X
+    public static void simplePrint() {
+        System.out.println("파라미터도 없고, 반환값도 없어요!");
+    }
+
+    // 파라미터 O, 반환값 X
+    public static void simpleSum(int num1, int num2) {
+        System.out.println("num1 :" + num1 + ", num2: " + num2);
+    }
+
+    // 파라미터 X, 반환값 O
+    public static int simpleReturn() {
+        return 3;
+    }
+
+    // 파라미터 O, 반환값 O
+    public static int sum(int num1, int num2) {    //  반드시 자료형 작성 필요
+        return num1 + num2;
+    }*/
+    /*메소드 연습퀴즈*//*
+    // 두 정수를 받아서, 뺀 값을 반환하는 메소드를 만들고, 그 값을 인쇄
+    public static int sub(int a, int b) {
+        return a - b;
+    }*/
+
+
     public static void main(String[] args) {
 
         /*변수 & 기초 문법*//*
@@ -13,7 +58,7 @@ public class Prac {
          * 변수명은 일반적으로 1)영어, 2)소문자 시작, 3) 구분은 대문자로
          * 자바는 항상 코드를 작성하고 제일 마지막에 세미콜론(;) 사용*/
 
-        System.out.println("안녕, 스파르타!");
+//        System.out.println("안녕, 스파르타!");
 
         /*[1주차]자바 기본 문법 1*/
 
@@ -95,6 +140,56 @@ public class Prac {
         //확인
         System.out.println(courseList);
 */
+
+
+
+        /*[1주차]자바 기본 문법 3*/
+
+        /*메소드*//*
+         * 반복적인 행동을 줄여서 어디든 갖다쓸 수 있는 명령 모음
+         * 메소드명은 변수명과 규칙(영어사용, 소문자시작, 공백없음, 대문자구분)이 같음
+         * 컴퓨터에게 명령하려면 세 가지 요소가 필요
+         *  1. 재료 = 파라미터 (없을 수 있음)
+         *  2. 명령 = 실행코드
+         *  3. 결과 = 반환값 (없을 수 있음)*/
+        /*메소드가 없을때*//*
+        String title = "웹개발의 봄 Spring";
+        String tutor = "남병관";
+        int weeks = 5;
+        float ratings = 5.0f;
+
+        System.out.println("제목: " + title);
+        System.out.println("튜터: " + tutor);
+        System.out.println("주차: " + weeks);
+        System.out.println("별점: " + ratings);
+*/
+        /*메소드가 있을때*//*
+        printInfo();
+        printInfo();
+        printInfo();
+        printInfo();
+        printInfo();*/
+        /*메소드의 파라미터, 반환값 다양한 경우*//*
+        // 파라미터 X, 반환값 X
+        simplePrint();
+
+        // 파라미터 O, 반환값 X
+        simpleSum(1, 2);
+
+        // 파라미터 X, 반환값 O
+        int ret = simpleReturn();
+        System.out.println(ret);
+
+        // 파라미터 O, 반환값 O
+        int ret2 = sum(10, 7);
+        System.out.println(ret2);*/
+        /*메소드 연습퀴즈*//*
+        int minus = sub(1, 2);
+        System.out.println(minus);*/
+
+
+
+
 
     }
 }
