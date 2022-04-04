@@ -7,7 +7,7 @@ public class Prac {
 
     public static void main(String[] args) {
 
-        /*변수 & 기초 문법
+        /*변수 & 기초 문법*//*
          * 변수는 "값을 담는 상자"
          * 변수를 선언할 떄는 (자료의 종류)(변수명) = (값) 의 순서
          * 변수명은 일반적으로 1)영어, 2)소문자 시작, 3) 구분은 대문자로
@@ -38,6 +38,7 @@ public class Prac {
         String myName3 = myName + myName2;
         System.out.println(myName3);
 */
+
 
 
         /*[1주차]자바 기본 문법 2*/
@@ -71,14 +72,12 @@ public class Prac {
         System.out.println(myList.get(1));  //  배열은 0 부터 시작하기 때문에, 2번째를 꺼내기 위해서는 1을 입력
 
         myList.remove(1);   //  리스트에서 항목 제거 할 때는 .remove
-
         */
         /*임포트*//*
          * List 처럼, 미리 작성된 코드를 불러오는 것*/
         /*주석*//*
          * 주석은 "나만 볼 수 있고 컴퓨터는 알아듣지 못하는 메모"
          * 개발자들끼리 소통하거나, 내가 개발하다가 메모를 남기고 싶을 때 주석을 사용*/
-        
         /*연습퀴즈*//*
          * course1 이라는 이름의 변수에 값을 "웹개발 종합반",
          * course2 라는 이름의 변수에 값을 "앱개발 종합반",
