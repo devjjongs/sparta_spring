@@ -346,4 +346,3 @@ public class Prac {
         System.out.println(course.getDays());
 
     }
-}
