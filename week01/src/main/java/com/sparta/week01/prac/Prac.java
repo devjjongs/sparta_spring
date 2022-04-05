@@ -316,22 +316,34 @@ public class Prac {
         course.tutor = "남병관";
         System.out.println(course.title);
         System.out.println(course.tutor);*/
-
         /*Ex2*//*
         Course course2 = new Course();
         course2.title = "프론트엔드의 꽃, React";
         course2.tutor = "임민영";
         System.out.println(course2.title);
         System.out.println(course2.tutor);*/
-
-        /*Ex3*/
+        /*Ex3*//*
         String title = "웹개발의 봄, Spring";
         String tutor = "남병관";
         int days = 35;
         Course course = new Course(title, tutor, days);
         System.out.println(course.title);
         System.out.println(course.tutor);
-        System.out.println(course.days);
+        System.out.println(course.days);*/
+
+
+        /*[1주차]Getter, Setter*/
+        String title = "웹개발의 봄, Spring";
+        String tutor = "남병관";
+        int days = 35;
+
+        Course course = new Course();
+        course.setTitle(title);
+        course.setTutor(tutor);
+        course.setDays(days);
+        System.out.println(course.getTitle());
+        System.out.println(course.getTutor());
+        System.out.println(course.getDays());
 
     }
 }
